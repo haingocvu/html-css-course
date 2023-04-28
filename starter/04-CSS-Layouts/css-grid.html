@@ -40,19 +40,41 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 30px;
+
+        display: none;
+
+        /* align */
       }
 
       .container--2 {
         /* STARTER */
+        /* display: none; */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 20px;
+
+        /* align tract */
+        justify-content: center;
+        align-content: center;
+
+        /* aligh item's content */
+        justify-items: center;
+        align-items: center;
       }
     </style>
   </head>

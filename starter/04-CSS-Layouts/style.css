@@ -26,7 +26,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
   display: flex;
   justify-content: space-between;
@@ -39,7 +39,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .post-header {
@@ -54,7 +54,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
+  /* width: 500px; */
 }
 
 /* SMALLER ELEMENTS */
@@ -283,7 +283,7 @@ nav p {
 .related-author {
   margin-top: 15px;
 }
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   align-items: flex-start;
@@ -295,7 +295,7 @@ aside {
 }
 article {
   flex: 1;
-}
+} */
 
 ul,
 ol {
@@ -306,4 +306,22 @@ ol {
 ul,
 ol {
   list-style-position: inside;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 300px;
+  column-gap: 50px;
+  row-gap: 50px;
+  /* overflow: hidden; */
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
+  justify-self: center;
 }
