@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        font-size: 24px;
+        height: 100vh;
+        color: #343a40;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+
+        text-align: center;
+        font-weight: 700;
+      }
+
+      nav {
+        background-color: #343a40;
+        grid-row: 1/-1;
+        color: #fff;
+
+        padding-top: 24px;
+      }
+
+      menu {
+        background-color: #7048e8;
+        color: #fff;
+        grid-column: 2/-1;
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 0px 32px;
+      }
+
+      section {
+        background-color: #e9ecef;
+
+        padding: 24px;
+
+        overflow-y: scroll;
+      }
+
+      aside {
+        background-color: #e9ecef;
+
+        padding-top: 24px;
+      }
+
+      main {
+        padding-top: 24px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+      }
+
+      li {
+        background-color: #aeb5bc;
+        width: 100%;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        background-color: #5f3dc4;
+        color: #fff;
+        padding: 8px 12px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      menu button:last-child {
+        margin-left: auto;
+
+        background-color: #d20f0f;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark unread</button>
+      <button>Trash</button>
+    </menu>
+    <section>
+      <ul>
+        <li class="email-item">Email 1</li>
+        <li class="email-item">Email 2</li>
+        <li class="email-item">Email 3</li>
+        <li class="email-item">Email 4</li>
+        <li class="email-item">Email 5</li>
+        <li class="email-item">Email 6</li>
+        <li class="email-item">Email 7</li>
+        <li class="email-item">Email 8</li>
+        <li class="email-item">Email 9</li>
+        <li class="email-item">Email 10</li>
+      </ul>
+    </section>
+    <main>Email View</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
